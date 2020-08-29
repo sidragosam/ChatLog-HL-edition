@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="author" content="Márk Mihályi & Kendrick Underwood">
+		<meta name="description" content="MTA/SAMP Élménykép segédlet - RP sorok szépítése, rendezése.">
+		<meta name="keywords" content="MTA,SA,SAMP,GTA,multiplayer,élménykép,chatlog,magician,segédlet,seemta,hungarylife,lsrp,advancedroleplay,finemta">
+		<title>Chatlog Workspace - v1.0</title>
+		<link href="libs/bootstrap.min.css" rel="stylesheet">
+		<link href="libs/spectrum.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="https://img.icons8.com/nolan/64/rockstar-games.png">
+	</head>
+	<body>
+		 <div class="container">
+		 	<div class="row header">
+				<div class="col-xs-12">
+					<h3 style="text-align:center;font-weight:bold;">Chatlog Workspace</h2>
+					<h5 style="text-align:center;font-style:italic;">saját soros verzió</h5><br>
+				</div>  
+			</div>
+			<div class="row name">
+				<div class="col-xs-12">
+					<input type="hidden" class="form-control" id="name">
+				</div>  
+			</div>
+			<div class="clog_settings">
+				<div class="row fontsize" id="bal">
+					<div class="col-xs-12">
+						<span id="font-label">Betűméret (13px):</span><br>
+						<button class="btn btn-default disabled" type="submit" id="decrease-fontsize">-</button>
+						<button class="btn btn-default" type="submit" id="reset-fontsize">visszaállítás</button>
+						<button class="btn btn-default" type="submit" id="increase-fontsize">+</button>
+					</div>  
+				</div>  
+				<div class="row color" id="jobb">
+					<div class="col-xs-12">
+						<span>Háttérszín:</span>
+						<input type='text' id="color-picker"/>
+						<br>
+					</div>  
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pld1">
+						<label>Cselekvés (me):</label>
+						<input type="text" id="pld1" name="pld1" class="form-control" value="*** János szakad a nevetéstől." readonly />
+					</div>
+					<div class="pld2">
+						<label>Történés (do):</label>
+						<input type="text" id="pld2" name="pld2" class="form-control" value="*Megcsúszik. ((János))" readonly /> 
+					</div>
+					<div class="pld3">
+						<label>Jellemzés (ame):</label>
+						<input type="text" id="pld3" name="pld3" class="form-control" value=">> János egy menő srác." readonly />
+					</div>
+					<div class="pld4">
+						<label>Általános csevegés (say):</label>
+						<input type="text" id="pld4" name="pld4" class="form-control" value="János mondja: Szevasz." readonly /> 
+					</div>
+					<div class="clearfix"></div>
+				</div>  
+			<div class="row">
+				<div class="col-xs-12">
+					<textarea class="form-control" rows="15" placeholder="Ide írd be az rp sorokat."></textarea>
+					<div class="output"></div>  
+				</div>  
+			</div>  
+			<div class="row">
+				<div class="col-xs-12">
+					<br>
+					<div class="alert alert-info" role="alert">
+						Ez az oldal segítséget nyújt minden élménykép készítőnek, beszélgetéseket, rp sorokat könnyedén meg tudod formázni itt, MTA-n belül csupán a háttérképet kell lefotózni.
+						<br>
+						<br>
+						<strong>Tipp:</strong> A chatlog-ot az MTA telepítési könyvtárán belül az MTA, azon belül a logs mappában találod a console.log fájlban. Discord kapcsolatfelvétel: <strong>Márk Mihályi#5244</strong>
+						<br>
+						<br>
+						<u>Egyéb használható dolgok:</u> <i>suttogja &#8212; mondja távolról &#8212; mondja a megafonba &#8212; mondja a rádióba</i>
+					</div>
+				</div>  
+			</div>  
+			<button onclick="location.href = 'https://markmihalyi.hu/chatlog'" class="button" type="button">Ha a log fájlból szeretnéd bemásolni a sorokat, akkor kattints ide.</button>
+		</div>  
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/json2.min.js"></script>
+		<script src="libs/jstorage.min.js"></script>
+		<script src="libs/bootstrap.min.js"></script>
+		<script src="libs/spectrum.min.js"></script>
+		<script src="js/scripts.min.js"></script>
+		<script src="js/copy.js"></script>
+	</body>
+</html>
