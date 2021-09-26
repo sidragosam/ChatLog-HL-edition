@@ -6,8 +6,6 @@
 - Hasznos funkciók
 - Felhasználó orientált kialakítás
 
-[![License](http://img.shields.io/:license-apache-red.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
-
 ---
 
 ## License
