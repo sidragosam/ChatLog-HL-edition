@@ -1,6 +1,6 @@
 # Chatlog Workspace
 
-> MTA/SAMP Élménykép segédlet - RP sorok szépítésére, rendezésére készült weboldal. (HTML/CSS/JS)
+> MTA/SAMP élménykép segédlet - RP sorok szépítésére, rendezésére készült weboldal. (HTML/CSS/JS)
 
 - Minimalizált design
 - Hasznos funkciók
