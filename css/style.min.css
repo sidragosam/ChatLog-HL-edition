@@ -11,14 +11,19 @@ body
 	max-width:280px;
 	text-transform:capitalize
 }
-.pld1
+.pld
 {
-    float:left;
-    width:280px;
-    margin:auto;
-	margin-right:5px;
+    /*float: left;*/
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	/*margin-right:5px;*/
 }
-.pld2
+.form-control {
+    text-align: center;
+}
+/*.pld2
 {
     float:left;
     width:280px;
@@ -38,7 +43,7 @@ body
     width:280px;
     margin:auto;
 	margin-right:5px;
-}
+}*/
 .clog_settings
 {
 	font-weight:bold;
@@ -66,89 +71,106 @@ body
 }
 .output
 {
-	line-height:0;-webkit-font-smoothing:none!important;
+	line-height:0;
+	-webkit-font-smoothing:none!important;
 	font-weight:700;
 	color:#fff;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
 	letter-spacing:0;
-	font-size:12px
+	font-size:15px;
+    margin-bottom: 20px;
+}
+
+#input {
+    text-align: left;
 }
 .generated
 {
-	background-
-	color:#000;display:inline-block;padding:8px 5px
+	background-color: #000;
+	/*display: inline-block;*/
+	padding: 8px 5px;
 }
 .me
 {
-	color:#c2a2da
+	color:#c2a2da;
 }
 .do
 {
-	color:#ff2850
+	color:#ff2850;
 }
 .ame
 {
-	color:#956cb4
+	color:#956cb4;
 }
 .yellow
 {
-	color:#ff0
+	color:#ff0;
 }
 .paleyellow
 {
-	color:#ffec8b
+	color:#ffec8b;
 }
 .grey
 {
-	color:#bbb
+	color:#bbb;
 }
 .lightgrey
 {
-	color:#e2e2e2
+	color:#e2e2e2;
 }
 .hide
 {
-	display:none
+	display:none;
 }
 .green
 {
-	color:#3a3
-}
-.radio
-{
-	color:#ffec8b
-}
-.megafon
-{
-	color:#e7e700
-}
-.tavol
-{
-	color:#999999
-}
-.borton
-{
-	color:#fc6246
+	color:#3a3;
 }
 .white
 {
-	color:#fff
+	color:#00b3ff;
 }
+.radio
+{
+	color:#05db0f !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.megafon
+{
+	color:#e7e700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tavol
+{
+	color:#999999;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.borton
+{
+	color:#fc6246;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 textarea
 {
-	margin-top:20px
+	margin-top:20px;
 }
 pre.pre-scrollable
 {
-	max-height:100px
+	max-height:100px;
 }
 .fontsize
 {
-	margin-bottom:20px
+	margin-bottom:20px;
 }
 .sp-replacer
 {
-	display:block;width:50px
+	display:block;
+	width:50px;
 }
 .button {
     width: 600px;
@@ -183,7 +205,7 @@ pre.pre-scrollable
 }
 
 .button:active {
-    color: #000
+    color: #000;
 }
 
 .button:active:after {

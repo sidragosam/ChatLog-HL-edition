@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	   	<meta name="author" content="Márk Mihályi & Kendrick Underwood">
+	   	<meta name="author" content="Márk Mihályi & Kendrick Underwood & skyLine">
 		<meta name="description" content="MTA/SAMP Élménykép segédlet - RP sorok szépítése, rendezése.">
 		<meta name="keywords" content="MTA,SA,SAMP,GTA,multiplayer,élménykép,chatlog,magician,segédlet,seemta,hungarylife,lsrp,advancedroleplay,finemta">
-		<title>Chatlog Workspace - v1.0</title>
+		<title>Chatlog Workspace for Hungary Life</title>
 		<link href="libs/bootstrap.min.css" rel="stylesheet">
 		<link href="libs/spectrum.min.css" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet">
@@ -18,9 +18,28 @@
 		 	<div class="row header">
 				<div class="col-xs-12">
 					<h3 style="text-align:center;font-weight:bold;">Chatlog Workspace</h2>
-					<h5 style="text-align:center;font-style:italic;">log bemásolós verzió</h5><br>
+					<h5 style="text-align:center;font-style:italic;">Hungary Life Version</h5><br>
 				</div>  
 			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<br>
+					<div class="alert alert-info" role="alert">
+						<center>Ez az oldal segítséget nyújt minden élménykép készítőnek. Az RP sorokat könnyedén meg tudod formázni itt, MTA-n belül csupán az interface nélküli képet kell lefotóznod.
+						<br>
+						<br>
+						<strong>Tipp:</strong> A chatlog-ot az MTA telepítési könyvtárán belül az MTA, azon belül a logs mappában találod a console.log fájlban (Alapértelmezetten: C:\Program Files (x86)\MTA San Andreas 1.6\MTA\logs). 
+						<br>
+						Eredeti készítő: <strong>𝗠𝗜𝗚𝗘𝗟#2059</strong>
+						<br>
+						Editet készítette: <strong>skyLine.7131</strong>
+						<br>
+						<br>
+						Használathoz egyszerűen másold be a chatlog-od, ahol pedig úgy érzed, hogy nem megfelelő a szöveg szerkessz rajta. Részletes leírást a lap alján találsz.</center>
+						<!-- <u>Egyéb használható dolgok:</u> <i>suttogja &#8212; mondja távolról &#8212; mondja a megafonba &#8212; mondja a rádióba</i> -->
+					</div>
+				</div> 					
+			</div>  
 			<div class="row name">
 				<div class="col-xs-12">
 					<input type="hidden" class="form-control" id="name">
@@ -45,46 +64,96 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="pld1">
-						<label>Cselekvés (me):</label>
-						<input type="text" id="pld1" name="pld1" class="form-control" value="[Output] : *** János szakad a nevetéstől." readonly />
+					<div class="pld">
+						<label>Beszéd:</label>
+						<input type="text" id="pld4" name="pld4" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : Kenji Koyama mondja: Szép estét barátom." readonly /> 
 					</div>
-					<div class="pld2">
-						<label>Történés (do):</label>
-						<input type="text" id="pld2" name="pld2" class="form-control" value="[Output] : *Megcsúszik. ((János))" readonly /> 
-					</div>
-					<div class="pld3">
-						<label>Jellemzés (ame):</label>
-						<input type="text" id="pld3" name="pld3" class="form-control" value="[Output] : >> János egy menő srác." readonly />
-					</div>
-					<div class="pld4">
-						<label>Általános csevegés (say):</label>
-						<input type="text" id="pld4" name="pld4" class="form-control" value="[Output] : János mondja: Szevasz." readonly /> 
-					</div>
-					<div class="clearfix"></div>
-				</div>  
+				</div>	
+			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<textarea class="form-control" rows="15" placeholder="Ide másold be a chatlog részletet."></textarea>
+					<div class="pld">
+						<label>Kiabálás:</label>
+						<input type="text" id="pld5" name="pld5" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : [S] Kenji Koyama kiáltja: Nézz ide!" readonly /> 
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pld">
+						<label>Suttogás:</label>
+						<input type="text" id="pld6" name="pld6" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : [C] Kenji Koyama súgja: Ezt figyeld." readonly /> 
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pld">
+						<label>Cselekvés (me):</label>
+						<input type="text" id="pld1" name="pld1" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : *** Kenji Koyama nevet." readonly />
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pld">
+						<label>Történés (do):</label>
+						<input type="text" id="pld2" name="pld2" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : *** Az asztalon egy toll található. ((Kenji Koyama))" readonly /> 
+					</div>
+				</div>	
+			</div>		
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pld">
+						<label>Jellemzés (ame):</label>
+						<input type="text" id="pld3" name="pld3" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : >> Kenji Koyama testét tetoválások borítják." readonly />
+					</div>
+				</div>	
+			</div>		
+			<!-- <div class="row">
+				<div class="col-xs-12">
+					<div class="pld">
+						<label>Rádiózás:</label>
+						<input type="text" id="pld5" name="pld5" class="form-control" value="[yyyy-mm-dd hh:mm:ss] [Output] : [Rádió #fff] Kenji Koyama mondja: Vétel egy kettő." readonly /> 
+					</div>
+				</div>	
+			</div>	-->
+			
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="col-xs-12">
+				<div class="col-xs-12">
+					<textarea class="form-control" id="input" rows="15" placeholder="Ide másold be a chatlog részletet."></textarea>
 					<div class="output"></div>  
 				</div>  
-			</div>  
-			<div class="row">
-				<div class="col-xs-12">
-					<br>
-					<div class="alert alert-info" role="alert">
-						Ez az oldal segítséget nyújt minden élménykép készítőnek, beszélgetéseket, rp sorokat könnyedén meg tudod formázni itt, MTA-n belül csupán a háttérképet kell lefotózni.
-						<br>
-						<br>
-						<strong>Tipp:</strong> A chatlog-ot az MTA telepítési könyvtárán belül az MTA, azon belül a logs mappában találod a console.log fájlban. Discord kapcsolatfelvétel: <strong>𝗠𝗜𝗚𝗘𝗟#2059</strong>
-						<br>
-						<br>
-						<u>Egyéb használható dolgok:</u> <i>suttogja &#8212; mondja távolról &#8212; mondja a megafonba &#8212; mondja a rádióba</i>
-					</div>
-				</div> 					
-			</div>  
-			<button onclick="location.href = 'https://markmihalyi.github.io/ChatLog/chatlog2'" class="button" type="button">Ha saját magad szeretnéd megírni a sorokat, akkor kattints ide.</button>
+			</div>
+			<!-- <button onclick="location.href = 'https://markmihalyi.github.io/ChatLog/chatlog2'" class="button" type="button">Ha saját magad szeretnéd megírni a sorokat, akkor kattints ide.</button> -->
+			
 		</div>  
+		<div class="alert alert-info" role="alert">
+			<center><strong>1. lépés:</strong> Másold be és szerkeszd meg a chatlog-odat.<br><br>
+				<strong>2. lépés:</strong> Nyisd meg a képmetsző alkalmazást.<br><br>
+				<img src="assets/01.png"><br><br>
+				<strong>3. lépés:</strong> Fotózd ki a fekete háttérrel elkészített RP log-ot. Másold ki a képet.<br><br>
+				<img src="assets/02.png" width="1000"><br><br>
+				<strong>4. lépés:</strong> Nyisd meg a <a href="https://www.adobe.com/hu/products/photoshop">Photoshop</a>-ot, vagy annak online ingyenes alternatíváját a <a href="https://photopea.com">Photopea</a>-t.<br><br>
+				<img src="assets/03.png" width="1000"><br><br>
+				<strong>5. lépés:</strong> Nyisd meg azt a képet, amelyikre rá szeretnéd illeszteni a chatlog-ot.<br><br>
+				<img src="assets/04.png" width="1000"><br><br>
+				<strong>6. lépés:</strong> Illeszd be a kivágott képet.<br><br>
+				<img src="assets/05.png" width="1000"><br><br>
+				<strong>7. lépés:</strong> Állitsd be a kivágott képen a tulajdonságokon belül az összhatást a képen látható módon.<br><br>
+				<img src="assets/06.png" width="1000"><br><br>
+				<strong>8. lépés:</strong> Duplikáld a réteget, majd egyesítsd őket.<br><br>
+				<img src="assets/07.png"><br><br>
+				<strong>9. lépés:</strong> Az új rétegen állítds be a körvonalat 1-esre.<br><br>
+				<img src="assets/08.png" width="1000"><br><br>
+				<strong>10. lépés:</strong> Rakj rá árnyékot is ha szeretnél a képen látható módon.<br><br>
+				<img src="assets/09.png" width="1000"><br><br>
+				<strong>11. lépés:</strong> Élvezd és publikáld a kész képed.<br><br>
+				<img src="assets/10.png" width="1000"><br><br></center>
+			<!-- <u>Egyéb használható dolgok:</u> <i>suttogja &#8212; mondja távolról &#8212; mondja a megafonba &#8212; mondja a rádióba</i> -->
+		</div>
 		<script src="libs/jquery.min.js"></script>
 		<script src="libs/json2.min.js"></script>
 		<script src="libs/jstorage.min.js"></script>

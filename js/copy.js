@@ -21,3 +21,13 @@ document.getElementById("pld4").onclick = function() {
     document.execCommand('copy');
     alert('Kimásoltad a példa szöveget, már be is illesztheted!');
 }
+document.getElementById("pld5").onclick = function() {
+    this.select();
+    document.execCommand('copy');
+    alert('Kimásoltad a példa szöveget, már be is illesztheted!');
+}
+document.getElementById("pld6").onclick = function() {
+    this.select();
+    document.execCommand('copy');
+    alert('Kimásoltad a példa szöveget, már be is illesztheted!');
+}
